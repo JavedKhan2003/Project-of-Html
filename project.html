@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Haider Fitness Club </title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: rgb(243, 240, 240);
+        margin: 0px;
+        padding: 0px;
+        background:url(image_bg.jpeg);
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: rgb(29, 19, 19);
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(14, 14, 15);
+
+    }
+    .rightdiv{
+        margin: 0; padding: 0;
+    }
+    .rightdiv {
+        height: 75vh;
+        display: flex;
+        justify-content: right;
+        align-items: right top;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    .rightdiv a {
+        height: 50px;
+        width: 50px;
+        background-color: #fafaf6;
+        border-radius: 50px;
+        text-align: center;
+        margin: 10px;
+        line-height: 65px;
+        box-shadow: 1px 4px 2px 2px #dcdde1;
+        right: 5px;
+        top: 5px;
+    }
+    a i {
+        transition: all 0.3s linear;
+    }
+    a:hover i{
+        transform: scale(1.2);
+    }
+    .fa-instagram{
+        color: #e84393;
+    }
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: rgb(30, 240, 97);
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="C:\Users\jkr78\Downloads\Gym-Event-Ideas-Pinterest-683x1024.jpg" alt="">
+            <div>Haider Fitness Club </div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Gallery </a></li>
+            </ul>
+        </div>
+        <div class="rightdiv">
+            <a href="https://www.instagram.com/javed_ibne_majid/" target="_blank">
+                <i class="fa fa-2x fa-instagram"> </i>
+            </a>
+            <a href="https://mail.google.com/jkr7865@gmail.com" target="_blank">
+                <i class="fa fa-2x fa-google"></i>
+            </a>
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <div class="service">
+        <div class="text">
+            <h1>Information About Fitness:</h1>
+            <div class="box">
+                <div>
+                    <ion-icon name="person"></ion-icon>
+                    <h2>Bycycle Training</h2>
+                    <p>1.As a beginner, ride 2–3 times per week for a total of 2–3 hours.
+                        <br>
+                        2.Shorter rides take 24 hours or less to recover from, but high-intensity rides require 24–48 hours of recovery time.
+                        <br>
+                        3.Cyclists of all skill levels should get at least one full rest day per week and the day before a Fondo.
+                        <br>
+                    </p>
+                </div>
+                
+                <ion-icon name="Sports"></ion-icon>
+                <h2>Sports Training</h2>
+                <p>Working out at the gym regularly keeps you from getting hurt when playing sports because your muscles have been built up and trained to handle the type of exertion competitive sports demand. Every sport requires strength in specific muscles, making it worth your while to have them in shape</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <h1>Latest Events in our Gym</h1>
+        <img src="gg.jpg" alt="image is not loaded " height=" 300px" >
+    </div>
+</body>
+
+</html>
